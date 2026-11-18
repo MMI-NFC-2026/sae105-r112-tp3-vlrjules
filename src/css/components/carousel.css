@@ -57,3 +57,9 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 .carousel__item img {
   display: block;
 }  
+
+.carousel__item {
+  /* Mobile : un item prend 80% de la largeur du carrousel */
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+}

@@ -6,12 +6,12 @@ const nextButton = document.querySelector('.carousel__button--next');
 if (carousel) {
   // Scroll au clic sur le bouton précédent
   prevButton.addEventListener("click", () => {
-    carousel.scrollLeft -= 520;
+    carousel.scrollBy({left: -260, behavior: "smooth"});
   });
 
   // Scroll au clic sur le bouton suivant
   nextButton.addEventListener("click", () => {
-    carousel.scrollLeft += 520;
+    carousel.scrollBy({left: 260, behavior: "smooth"});
   });
 }
 
